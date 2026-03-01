@@ -1,8 +1,9 @@
 # 🎮 AEGIS-7 Tactical Avatar – Scroll-Driven Landing Experience
 
-## 🎥 Preview
 
-> (Add your preview.gif inside the `public` folder and uncomment the line below)
+## 🎥 Preview
+https://github.com/user-attachments/assets/cb8a70b9-b5c6-4909-9ed6-f9776bd4a0ea
+
 
 <!-- ![Avatar Preview](public/preview.gif) -->
 
