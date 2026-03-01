@@ -1,5 +1,11 @@
 # 🎮 AEGIS-7 Tactical Avatar – Scroll-Driven Landing Experience
 
+## 🎥 Preview
+
+> (Add your preview.gif inside the `public` folder and uncomment the line below)
+
+<!-- ![Avatar Preview](public/preview.gif) -->
+
 A scroll-linked tactical avatar reveal built with **Next.js (App Router), TypeScript, Tailwind CSS, Framer Motion, and the HTML5 Canvas API**.
 
 This project explores high-performance frame-based animation, scrollytelling techniques, and modern UI motion systems in a gaming-style interface.
@@ -47,21 +53,21 @@ The experience combines:
 
 ## 📁 Project Structure
 
-
+```
 /
 ├── app/
-│ ├── layout.tsx
-│ ├── page.tsx
-│ └── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
 ├── components/
-│ └── TacticalCanvas.tsx
+│   └── TacticalCanvas.tsx
 ├── public/
-│ └── frames/
+│   └── frames/
 ├── tailwind.config.ts
 ├── next.config.js
 ├── tsconfig.json
 └── package.json
-
+```
 
 ---
 
@@ -71,90 +77,102 @@ The experience combines:
 
 ```bash
 npm install
-2️⃣ Add animation frames
+```
+
+### 2️⃣ Add animation frames
 
 Place frame images inside:
 
+```
 public/frames/
+```
 
 Format:
 
+```
 ezgif-frame-001.jpg
 ezgif-frame-002.jpg
 ...
 ezgif-frame-189.jpg
+```
 
 Zero-padded numbering is required.
 
-3️⃣ Start development server
+### 3️⃣ Start development server
+
+```bash
 npm run dev
+```
 
 Open:
 
+```
 http://localhost:3000
-🎬 Scroll Animation System
+```
+
+---
+
+## 🎬 Scroll Animation System
 
 The canvas engine:
 
-Maps scrollYProgress (0 → 1) to frame index (0 → 188)
+- Maps `scrollYProgress` (0 → 1) to frame index (0 → 188)
+- Uses Framer Motion’s `useSpring` for smooth interpolation
+- Prevents frame-skipping and jitter
+- Automatically resizes canvas on viewport changes
+- Cleans up scroll listeners on component unmount
 
-Uses Framer Motion’s useSpring for smooth interpolation
+---
 
-Prevents frame-skipping and jitter
+## 🎨 Visual Direction
 
-Automatically resizes canvas on viewport changes
+- Background: `#050505`
+- Primary Accent: Cyan (`#06b6d4`)
+- Minimal uppercase typography
+- Tactical data-readout aesthetic
+- Custom scrollbar styling
 
-Cleans up scroll listeners on component unmount
+---
 
-🎨 Visual Direction
+## 📱 Responsive Behavior
 
-Background: #050505
+- Maintains avatar aspect ratio
+- Uses contain scaling logic
+- Adapts to viewport width and height
+- Ensures full avatar visibility across devices
 
-Primary Accent: Cyan (#06b6d4)
+---
 
-Minimal uppercase typography
+## 🧠 Key Learnings
 
-Tactical data-readout aesthetic
+- Scroll-linked animation architecture
+- Frame preloading strategies
+- Canvas rendering performance considerations
+- Motion smoothing with spring physics
+- React cleanup patterns for performance safety
+- Structuring reusable animation components
 
-Custom scrollbar styling
+---
 
-📱 Responsive Behavior
-
-Maintains avatar aspect ratio
-
-Uses contain scaling logic
-
-Adapts to viewport width and height
-
-Ensures full avatar visibility across devices
-
-🧠 Key Learnings
-
-Scroll-linked animation architecture
-
-Frame preloading strategies
-
-Canvas rendering performance considerations
-
-Motion smoothing with spring physics
-
-React cleanup patterns for performance safety
-
-Structuring reusable animation components
-
-📚 Reference
+## 📚 Reference
 
 This project was created by referring to an online tutorial and expanding upon it to better understand scroll-based animation systems.
 
-⚠️ Disclaimer
+---
 
-This project is created strictly for educational and portfolio purposes.
+## ⚠️ Disclaimer
+
+This project is created strictly for **educational and portfolio purposes**.
 
 It is not intended for commercial distribution.
 
-👤 Author
+---
 
-Bhumi Chotaliya
+## 👤 Author
+
+**Bhumi Chotaliya**  
 GitHub: https://github.com/bhumii-10
+
+---
 
 ⭐ If you found this project interesting, feel free to explore the code.
