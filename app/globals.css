@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050505;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, 'SF Pro Display', 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar - ultra-thin dark with cyan hover */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: #1a1a1a transparent;
+  scrollbar-width: thin;
+}
+
+*:hover {
+  scrollbar-color: #06b6d4 transparent;
+}
+
+/* Typography utilities */
+.tracking-tight {
+  letter-spacing: -0.03em;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-base {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+}
+
+/* Cyan glow effects */
+.glow-cyan {
+  text-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+
+.glow-cyan-strong {
+  text-shadow: 0 0 20px rgba(6, 182, 212, 0.8),
+               0 0 40px rgba(6, 182, 212, 0.5);
+}
+
+/* Loading bar styles */
+.loading-bar {
+  height: 2px;
+  background: linear-gradient(90deg, #06b6d4, transparent);
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.6);
+}
+
+/* Ensure canvas doesn't have extra space */
+canvas {
+  display: block;
+}

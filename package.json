@@ -1,0 +1,26 @@
+{
+  "name": "aegis-7-tactical-avatar",
+  "version": "1.0.0",
+  "description": "Premium scrollytelling landing page for Aegis-7 Tactical Avatar",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "14.0.4",
+    "framer-motion": "^10.16.16",
+    "tailwindcss": "^3.3.6",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/node": "^20.10.6"
+  }
+}

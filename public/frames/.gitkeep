@@ -1,0 +1,17 @@
+# Frame Assets Directory
+
+Place all 189 avatar frames in this directory.
+
+Frames should be named:
+- ezgif-frame-001.jpg
+- ezgif-frame-002.jpg
+- ...
+- ezgif-frame-189.jpg
+
+These will be automatically served by Next.js and loaded into the canvas animation.
+
+For quick setup, run:
+- **Windows**: `setup.bat`
+- **macOS/Linux**: `bash setup.sh`
+
+Both scripts will automatically move frames from the root directory to this location.
